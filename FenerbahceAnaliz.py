@@ -35,7 +35,7 @@ for uyruk in uyruk_kumesi:
     #find() fonksiyonunun class'ı "flaggenrahmen" ve title'ı olan veriyi bulacak
     bayrak = uyruk.find("img", {"class": "flaggenrahmen"}, {"title":True})
     #image'ın title'ında ülke isimleri mevcut
-    if(bayrak != None): # We will test if we have found any matches than add them
+    if(bayrak != None):
         futbolcu_uyruklari.append(bayrak['title'])
 
 #Futbolcu piyasa değerlerine ulaşmak için ihtiyaç duyduğumuz liste ve dataframe
